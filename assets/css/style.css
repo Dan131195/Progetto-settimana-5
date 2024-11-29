@@ -334,8 +334,27 @@ nav ul li a {
     #title {
         overflow: hidden;
     }
+    #trending {
+        margin: 20px;
+    }
+    #trendingContent {
+        justify-content: center;
+    }
+    .trendingArticle {
+        flex-basis: 40%;
+    }
     #mm {
         margin-right: -15em;
+    }
+    .aside {
+        display: block;
+        margin-top: 30px;
+    }
+    #categories {
+        order: 1;
+    }
+    #news {
+        order: 2;
     }
 }
 
@@ -343,10 +362,4 @@ nav ul li a {
     #mm {
         display: none;
     }
-    #trendingContent {
-        justify-content: center;
-    }
-    .trendingArticle {
-        flex-basis: 48%;
-    }
-}
+    
