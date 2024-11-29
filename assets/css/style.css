@@ -45,7 +45,8 @@ header,
 .trendingParagraph p,
 .newsContent,
 .newsAuthor,
-.date, .date p {
+.date,
+.date p {
   align-items: center;
 }
 
@@ -68,7 +69,6 @@ header,
 header {
   position: sticky;
   top: 0;
-  z-index: 1000;
   height: 10vh;
 }
 
@@ -216,8 +216,7 @@ nav ul li a {
   flex-basis: 50%;
   margin-left: 7em;
   position: sticky;
-  top: 0;
-  z-index: 900;
+  top: 200px;
 }
 
 .newsContent {
@@ -299,9 +298,9 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1200px) {
-    .aside {
-        font-size: 0.8em;
-    }
+  .aside {
+    font-size: 0.8em;
+  }
   .news {
     flex-basis: 40%;
   }
@@ -314,4 +313,40 @@ nav ul li a {
   .newsImg {
     flex-basis: 20%;
   }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 0.8em;
+    }
+    .eighty,
+    #trending,
+    .aside {
+      width: 90vw;
+      margin: 0 auto;
+    }
+    #titleContent {
+        flex-basis: 60%;
+    }
+    #titleContent h1 {
+        font-size: 4em;
+    }
+    #title {
+        overflow: hidden;
+    }
+    #mm {
+        margin-right: -15em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #mm {
+        display: none;
+    }
+    #trendingContent {
+        justify-content: center;
+    }
+    .trendingArticle {
+        flex-basis: 48%;
+    }
 }
