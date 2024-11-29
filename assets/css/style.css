@@ -381,5 +381,15 @@ nav ul li a {
     #categories {
         width: 100%;
         margin: 0;
+        margin-bottom: 20px;
+    }
+    .newsImg {
+        flex-basis: 10%;
+    }
+    .newsParagraph {
+        flex-basis: 90%;
+    }
+    .newsImg img {
+        height: 80%;
     }
 }
