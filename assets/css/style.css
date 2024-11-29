@@ -69,6 +69,7 @@ header,
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   height: 10vh;
 }
 
@@ -216,7 +217,7 @@ nav ul li a {
   flex-basis: 50%;
   margin-left: 7em;
   position: sticky;
-  top: 200px;
+  top: 100px;
 }
 
 .newsContent {
@@ -354,6 +355,7 @@ nav ul li a {
         order: 1;
         font-size: 1.3em;
         position: static;
+        margin-bottom: 40px;
     }
     #news {
         order: 2;
@@ -362,7 +364,22 @@ nav ul li a {
 }
 
 @media screen and (max-width: 767px) {
+    #titleContent {
+        flex-basis: 90%;
+    }
+    #trendingContent {
+        flex-direction: column;
+        flex-basis: 90%;
+        align-items: flex-start;
+    }
+    .hidden {
+        display: none;
+    }
     #mm {
         display: none;
+    }
+    #categories {
+        width: 100%;
+        margin: 0;
     }
 }
