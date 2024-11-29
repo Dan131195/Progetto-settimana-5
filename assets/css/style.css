@@ -253,6 +253,10 @@ nav ul li a {
   margin: 5px 0;
 }
 
+.newsParagraphContent h2 {
+  font-weight: 800;
+}
+
 .category {
   background-color: rgb(211, 211, 211);
   border-radius: 10px;
@@ -302,7 +306,7 @@ nav ul li a {
   color: rgb(97, 96, 96);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .aside {
     font-size: 0.8em;
   }
