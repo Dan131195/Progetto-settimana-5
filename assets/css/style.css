@@ -32,6 +32,7 @@ header,
 .newsAuthor,
 .newsParagraph,
 .date,
+.date p,
 #singleCategories {
   display: flex;
 }
@@ -44,7 +45,7 @@ header,
 .trendingParagraph p,
 .newsContent,
 .newsAuthor,
-.date {
+.date, .date p {
   align-items: center;
 }
 
@@ -298,5 +299,19 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1200px) {
-    
+    .aside {
+        font-size: 0.8em;
+    }
+  .news {
+    flex-basis: 40%;
+  }
+  #categories {
+    flex-basis: 50%;
+  }
+  .newsParagraph {
+    flex-basis: 80%;
+  }
+  .newsImg {
+    flex-basis: 20%;
+  }
 }
