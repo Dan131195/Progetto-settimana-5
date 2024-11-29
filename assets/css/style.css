@@ -32,8 +32,7 @@ header,
 .newsAuthor,
 .newsParagraph,
 .date,
-.date p,
-#singleCategories {
+.date p {
   display: flex;
 }
 
@@ -70,7 +69,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 100px;
+  height: 80px;
 }
 
 #headerContent {
@@ -224,7 +223,6 @@ nav ul li a {
 
 .newsContent {
   justify-content: space-between;
-  height: 180px;
   margin-bottom: 3em;
 }
 
@@ -265,11 +263,11 @@ nav ul li a {
 .newsImg {
   flex-basis: 30%;
   margin-left: 2em;
-  height: 180px;
+  
 }
 
 .newsImg img {
-  height: 100%;
+  width: 100%;
 }
 
 .date {
@@ -277,7 +275,6 @@ nav ul li a {
 }
 
 #singleCategories {
-  flex-wrap: wrap;
   border-bottom: 1px solid gray;
   padding-bottom: 20px;
 }
@@ -285,19 +282,23 @@ nav ul li a {
 .singleCategory {
   text-align: center;
   border: 1px solid gray;
-  margin: 10px;
-  padding: 5px 0;
-  flex-basis: 25%;
+  margin: 5px;
+  padding: 8px;
+  display: inline;
   background-color: transparent;
 }
 
-#infos ul li {
-  display: inline;
-  margin-right: 5px;
+#infos {
+  line-height: 2;
 }
 
-.singleCategory a,
-.info a {
+#infos ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.singleCategory,
+.info a, .newsParagraphContent p, #date {
   color: rgb(97, 96, 96);
 }
 
@@ -354,11 +355,27 @@ nav ul li a {
     flex-direction: column;
     margin-top: 30px;
   }
+  .newsAuthor img {
+    width: 30px;
+  }
+  .newsImg {
+    flex-basis: 30%;
+  }
+  .newsParagraph {
+    flex-basis: 70%;
+  }
+  .newsImg img {
+    width: 100%;
+    height: 60%;
+  }
   #categories {
     order: 1;
     font-size: 1.3em;
     position: static;
-    margin-bottom: 40px;
+    margin: 20px 0;
+  }
+  #singleCategories {
+    float: left;
   }
   #news {
     order: 2;
@@ -386,13 +403,20 @@ nav ul li a {
     margin: 0;
     margin-bottom: 20px;
   }
+  /* .newsAuthor img {
+    width: 30px;
+  }
   .newsImg {
-    flex-basis: 10%;
+    flex-basis: 30%;
   }
   .newsParagraph {
-    flex-basis: 90%;
+    flex-basis: 70%;
   }
-  #newsImg img {
-    height: 80%;
+  .newsImg img {
+    width: 100%;
+    height: 60%;
+  } */
+  .newsParagraphContent {
+    margin-top: 0;
   }
 }
