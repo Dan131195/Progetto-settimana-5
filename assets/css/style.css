@@ -355,6 +355,7 @@ nav ul li a {
     }
     #news {
         order: 2;
+        font-size: 1.2em;
     }
 }
 
