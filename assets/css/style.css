@@ -347,11 +347,13 @@ nav ul li a {
         margin-right: -15em;
     }
     .aside {
-        display: block;
+        flex-direction: column;
         margin-top: 30px;
     }
     #categories {
         order: 1;
+        font-size: 1.3em;
+        position: static;
     }
     #news {
         order: 2;
@@ -363,4 +365,4 @@ nav ul li a {
     #mm {
         display: none;
     }
-    
+}
