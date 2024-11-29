@@ -217,7 +217,9 @@ nav ul li a {
   flex-basis: 50%;
   margin-left: 7em;
   position: sticky;
+  align-self: flex-start;
   top: 100px;
+  overflow-y: auto;
 }
 
 .newsContent {
@@ -317,79 +319,79 @@ nav ul li a {
 }
 
 @media screen and (max-width: 991px) {
-    body {
-        font-size: 0.8em;
-    }
-    .eighty,
-    #trending,
-    .aside {
-      width: 90vw;
-      margin: 0 auto;
-    }
-    #titleContent {
-        flex-basis: 60%;
-    }
-    #titleContent h1 {
-        font-size: 4em;
-    }
-    #title {
-        overflow: hidden;
-    }
-    #trending {
-        margin: 20px;
-    }
-    #trendingContent {
-        justify-content: center;
-    }
-    .trendingArticle {
-        flex-basis: 40%;
-    }
-    #mm {
-        margin-right: -15em;
-    }
-    .aside {
-        flex-direction: column;
-        margin-top: 30px;
-    }
-    #categories {
-        order: 1;
-        font-size: 1.3em;
-        position: static;
-        margin-bottom: 40px;
-    }
-    #news {
-        order: 2;
-        font-size: 1.2em;
-    }
+  body {
+    font-size: 0.8em;
+  }
+  .eighty,
+  #trending,
+  .aside {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  #titleContent {
+    flex-basis: 60%;
+  }
+  #titleContent h1 {
+    font-size: 4em;
+  }
+  #title {
+    overflow: hidden;
+  }
+  #trending {
+    margin: 20px;
+  }
+  #trendingContent {
+    justify-content: center;
+  }
+  .trendingArticle {
+    flex-basis: 40%;
+  }
+  #mm {
+    margin-right: -15em;
+  }
+  .aside {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  #categories {
+    order: 1;
+    font-size: 1.3em;
+    position: static;
+    margin-bottom: 40px;
+  }
+  #news {
+    order: 2;
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    #titleContent {
-        flex-basis: 90%;
-    }
-    #trendingContent {
-        flex-direction: column;
-        flex-basis: 90%;
-        align-items: flex-start;
-    }
-    .hidden {
-        display: none;
-    }
-    #mm {
-        display: none;
-    }
-    #categories {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .newsImg {
-        flex-basis: 10%;
-    }
-    .newsParagraph {
-        flex-basis: 90%;
-    }
-    .newsImg img {
-        height: 80%;
-    }
+  #titleContent {
+    flex-basis: 90%;
+  }
+  #trendingContent {
+    flex-direction: column;
+    flex-basis: 90%;
+    align-items: flex-start;
+  }
+  .hidden {
+    display: none;
+  }
+  #mm {
+    display: none;
+  }
+  #categories {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .newsImg {
+    flex-basis: 10%;
+  }
+  .newsParagraph {
+    flex-basis: 90%;
+  }
+  #newsImg img {
+    height: 80%;
+  }
 }

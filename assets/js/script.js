@@ -3,7 +3,7 @@ const start = document.getElementById("start");
 
 nav.addEventListener("scroll", () => {
   if (window.scrollY(590)) {
-    nav.style.backgroundColor = "White";
-    start.style.backgroundColor = "Green";
+    nav.style.backgroundColor = "white";
+    start.style.backgroundColor = "green";
   }
 });
